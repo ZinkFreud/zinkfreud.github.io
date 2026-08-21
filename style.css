@@ -1,0 +1,106 @@
+/* Genel ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    padding: 60px 20px;
+}
+
+/* Ortadaki kapsayıcı */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ÜST BÖLÜM */
+header {
+    margin-bottom: 60px;
+}
+
+.avatar {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.intro {
+    font-size: 17px;
+    color: #999;
+}
+
+/* BÖLÜM BAŞLIKLARI */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* LİSTELER */
+ul {
+    list-style: none;
+}
+
+.project-list li,
+.writing-list li {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-name,
+.writing-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a.project-name:hover {
+    color: #999;
+}
+
+.project-desc,
+.writing-desc {
+    font-size: 15px;
+    color: #888;
+}
+
+/* İLETİŞİM */
+footer {
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #222;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #fff;
+}
