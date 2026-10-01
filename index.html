@@ -1,68 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cihan Güzelsoy</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Kendi kendine öğrenen geliştirici. Yaptığım projeler ve yazılar.">
+    <meta name="theme-color" content="#0E1116">
+    <meta property="og:title" content="Cihan Güzelsoy">
+    <meta property="og:description" content="Kendi kendine öğrenen geliştirici. Yaptığım projeler ve yazılar.">
+    <meta property="og:url" content="https://cihang.dev/">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <!-- ÜST: foto + isim + tanıtım -->
-        <header>
-            <img src="idle.png" alt="Cihan Güzelsoy" class="avatar">
-            <h1>Cihan Güzelsoy</h1>
-            <p class="intro">Self-taught developer from Türkiye who loves to build and learn.</p>
+    <div class="sayfa">
+        <nav class="ust">
+            <a href="/" class="logo" aria-label="Ana sayfa">c<span>.</span></a>
+            <div class="menu">
+                <a href="#projeler">Projeler</a>
+                <a href="#yazilar">Yazılar</a>
+                <a href="#iletisim">İletişim</a>
+            </div>
+        </nav>
+
+        <header class="tanitim">
+            <img src="idle.png" alt="Cihan Güzelsoy" class="foto" width="458" height="545">
+            <div>
+                <h1>Cihan Güzelsoy</h1>
+                <p>Türkiye'den, kendi kendine öğrenen bir geliştiriciyim. Aklıma takılan fikirleri uygulamaya çevirip yayınlıyorum: web, mobil ve oyun.</p>
+            </div>
         </header>
 
-        <!-- PROJELER -->
-        <section>
-            <h2>Projects</h2>
-            <ul class="project-list">
-                <li>
-                    <a class="project-name" href="https://traxplore.app" target="_blank">Traxplore</a>
-                    <span class="project-desc">Mark the countries and cities you have been to on a 3D globe (JavaScript, Supabase)</span>
+        <section id="projeler">
+            <h2>Projeler</h2>
+            <p class="aciklama"><span class="isik yanik" aria-hidden="true"></span> yayında &nbsp; <span class="isik" aria-hidden="true"></span> yapım aşamasında &nbsp; <span class="isik arsiv" aria-hidden="true"></span> arşivde</p>
+
+            <ul class="projeler">
+                <li class="proje">
+                    <span class="isik yanik" aria-hidden="true"></span>
+                    <div class="govde">
+                        <div class="baslik">
+                            <a href="https://traxplore.app" target="_blank" rel="noopener">Traxplore</a>
+                            <span class="durum">App Store'da</span>
+                        </div>
+                        <p>Gittiğin ülke ve şehirleri dönen bir dünya küresinde işaretle. Her şehir bir ışık olarak yanıyor; haritanı arkadaşlarınla paylaşabiliyorsun.</p>
+                        <p class="teknik">JavaScript, Supabase, Swift</p>
+                        <div class="baglantilar">
+                            <a href="https://traxplore.app" target="_blank" rel="noopener">traxplore.app</a>
+                            <a href="https://apps.apple.com/us/app/traxplore/id6816380035" target="_blank" rel="noopener">App Store</a>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a class="project-name" href="https://gplaycoin.com" target="_blank">GPlayCoin</a>
-                    <span class="project-desc">Online 101 Okey with a server-authoritative game engine (Unity, C#)</span>
+
+                <li class="proje">
+                    <span class="isik yanik" aria-hidden="true"></span>
+                    <div class="govde">
+                        <div class="baslik">
+                            <a href="https://teklifkutusu.com" target="_blank" rel="noopener">Teklif Kutusu</a>
+                            <span class="durum">Ücretsiz</span>
+                        </div>
+                        <p>Küçük işletmeler için tarayıcıda fiyat teklifi hazırlama aracı. Ürünleri gir, KDV ve iskonto hesaplansın, PDF olarak indir.</p>
+                        <div class="baglantilar">
+                            <a href="https://teklifkutusu.com" target="_blank" rel="noopener">teklifkutusu.com</a>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a class="project-name" href="https://github.com/ZinkFreud/NotToDoList" target="_blank">NotToDo</a>
-                    <span class="project-desc">Android app for tracking bad habits (Kotlin)</span>
+
+                <li class="proje">
+                    <span class="isik" aria-hidden="true"></span>
+                    <div class="govde">
+                        <div class="baslik">
+                            <a href="https://gplaycoin.com" target="_blank" rel="noopener">GPlayCoin</a>
+                            <span class="durum">Geliştiriliyor</span>
+                        </div>
+                        <p>Çevrim içi 101 Okey. Hamleleri sunucu denetliyor, bu yüzden kimse elindeki taşlarla hile yapamıyor.</p>
+                        <p class="teknik">Unity, C#, Supabase</p>
+                        <div class="baglantilar">
+                            <a href="https://gplaycoin.com" target="_blank" rel="noopener">gplaycoin.com</a>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a class="project-name" href="https://github.com/ZinkFreud/StoControl" target="_blank">StoControl</a>
-                    <span class="project-desc">Stock & sales management desktop app (C#, WPF, SQL)</span>
+
+                <li class="proje">
+                    <span class="isik" aria-hidden="true"></span>
+                    <div class="govde">
+                        <div class="baslik">
+                            <a href="https://github.com/ZinkFreud/NotToDoList" target="_blank" rel="noopener">NotToDo</a>
+                            <span class="durum">Test aşamasında</span>
+                        </div>
+                        <p>Yapmayacakların listesi. Bırakmak istediğin alışkanlığı ekle, kaç gündür dayandığını sayaç tutsun.</p>
+                        <p class="teknik">Kotlin, Jetpack Compose</p>
+                        <div class="baglantilar">
+                            <a href="https://github.com/ZinkFreud/NotToDoList" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a class="project-name" href="https://github.com/ZinkFreud/RetroHesapMakinesi" target="_blank">RetroHesap</a>
-                    <span class="project-desc">Retro-style calculator</span>
+
+                <li class="proje">
+                    <span class="isik arsiv" aria-hidden="true"></span>
+                    <div class="govde">
+                        <div class="baslik">
+                            <a href="https://github.com/ZinkFreud/StoControl" target="_blank" rel="noopener">StoControl</a>
+                        </div>
+                        <p>Stok, satış ve teknik servis takibi için masaüstü programı.</p>
+                        <p class="teknik">C#, WPF, SQL</p>
+                        <div class="baglantilar">
+                            <a href="https://github.com/ZinkFreud/StoControl" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="proje">
+                    <span class="isik arsiv" aria-hidden="true"></span>
+                    <div class="govde">
+                        <div class="baslik">
+                            <a href="https://github.com/ZinkFreud/RetroHesapMakinesi" target="_blank" rel="noopener">RetroHesap</a>
+                        </div>
+                        <p>Eski tip cep hesap makinelerinin görünümünde bir hesap makinesi.</p>
+                        <div class="baglantilar">
+                            <a href="https://github.com/ZinkFreud/RetroHesapMakinesi" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <!-- YAZILAR -->
-        <section>
-            <h2>Writing</h2>
-            <ul class="writing-list">
-                <li>
-                    <a class="writing-title" href="main-character.html">Hayatınızın Başrolü Senaryoda Yoksa: Main Character Syndrome</a>
-                </li>
+        <section id="yazilar">
+            <h2>Yazılar</h2>
+            <ul class="yazilar">
+                <li><a href="main-character.html">Hayatınızın Başrolü Senaryoda Yoksa: Main Character Syndrome</a></li>
             </ul>
         </section>
 
-        <!-- İLETİŞİM -->
-        <footer>
-            <a href="https://github.com/ZinkFreud" target="_blank">GitHub</a>
-            <a href="mailto:cihanguzelsoy@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/cihan-güzelsoy/" target="_blank">LinkedIn</a>
-            <a href="https://x.com/4august2026" target="_blank">X</a>
+        <footer id="iletisim">
+            <h2>İletişim</h2>
+            <p>Bir proje, fikir ya da sadece merhaba için yazabilirsin.</p>
+            <a class="eposta" href="mailto:cihanguzelsoy@gmail.com">cihanguzelsoy@gmail.com</a>
+            <div class="sosyal">
+                <a href="https://github.com/ZinkFreud" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://x.com/4august2026" target="_blank" rel="noopener">X</a>
+                <a href="https://www.linkedin.com/in/cihan-güzelsoy/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+            <p class="alt">cihang.dev</p>
         </footer>
-        <div class="sayac">
-            <img src="https://hits.sh/zinkfreud.github.io.svg?style=flat-square&label=Visitors&color=E67E22&labelColor=222222" alt="Visitor count">
-        </div>
-    </main>
+    </div>
 </body>
 </html>
